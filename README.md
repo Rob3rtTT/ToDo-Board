@@ -1,17 +1,24 @@
 # ToDo-Board
-ToDo application.
+ToDo board application created as assignment for App Academy Open.
 
-1.Install pry using 
+Fully functional application, allows users to create multiple lists and to mark tasks complete.
+
+Run the application using:
+
+    ruby todo_board.rb
     
-    gem install pry
-2.Start pry and load the rb file
+For help type
 
-    load 'todo_board.rb'
+    commands?
+    
+Create new list:
 
-3.Create a new board 
+    mklist <list name>
+    
+Create new tasks:
 
-    board = TodoBoard.new('Board_Name')
+    mktodo <list_name> <task_name> <date dd-mm-yyyy> <*description>
+    
+Mark task complete:
 
-4. Run the script 
-
-        board.run
+    toggle <list_name> <item_index>
